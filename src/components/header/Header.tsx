@@ -10,7 +10,7 @@ export const Header: React.FC = () => {
       {/* top-header */}
       <div className={styles["top-header"]}>
         <div className={styles.inner}>
-          <Typography.Text>携程在手 说走就走</Typography.Text>
+          <Typography.Text>让旅行更幸福</Typography.Text>
           <Dropdown.Button
             style={{ marginLeft: 15 }}
             overlay={

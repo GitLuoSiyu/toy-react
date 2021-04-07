@@ -7,6 +7,12 @@ function App() {
   return (
     <div className={styles.App}>
       <Header />
+
+      <div className={styles["page_content"]}>
+
+
+      </div>
+
       <Footer />
     </div>
   );
