@@ -5,9 +5,7 @@ interface MatchParams {
   touristRouteId: string;
 }
 
-export const Detail: React.FC<RouteComponentProps<MatchParams>> = (
-  props
-) => {
+export const Detail: React.FC<RouteComponentProps<MatchParams>> = ( props ) => {
 //   console.log(props.history);
 //   console.log(props.location);
 //   console.log(props.match);
