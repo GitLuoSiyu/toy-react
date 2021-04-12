@@ -1,4 +1,4 @@
-interface LanguageState {
+export interface LanguageState {
     language: "en" | "zh";
     languageList: { name: string; code: string }[];
 }
@@ -12,6 +12,5 @@ const defaultState: LanguageState = {
 };
 
 export default (state = defaultState, action) => {
-    // 
     return state;
 };
