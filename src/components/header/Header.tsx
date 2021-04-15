@@ -10,11 +10,16 @@ import {
   useRouteMatch,
 } from "react-router-dom";
 
+import { useSelector } from "react-redux";
+import { RootState } from "../../redux/store"
+
 export const Header: React.FC = () => {
   const history = useHistory();
   const location = useLocation();
   const params = useParams();
   const match = useRouteMatch();
+
+  const language = useSelector((state: RootState) => state.language)
 
   return (
     <div className={styles["app-header"]}>
