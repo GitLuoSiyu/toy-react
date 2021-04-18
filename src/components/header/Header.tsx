@@ -24,15 +24,16 @@ export const Header: React.FC = () => {
   const location = useLocation();
   const params = useParams();
   const match = useRouteMatch();
-
   const language = useSelector((state) => state.language);
   const languageList = useSelector((state) => state.languageList);
   const dispatch = useDispatch();
+  // const dispatch = useDispatch<Dispatch<LanguageActionTypes>>();
   const { t } = useTranslation();
 
   const menuClickHandler = (e) => {
     console.log(e);
     if (e.key === "new") {
+      // 处理新语言添加action
       dispatch(addLanguageActionCreator("新语言", "new_lang"));
     } else {
       dispatch(changeLanguageActionCreator(e.key));
@@ -41,6 +42,7 @@ export const Header: React.FC = () => {
 
   return (
     <div className={styles["app-header"]}>
+      {/* top-header */}
       <div className={styles["top-header"]}>
         <div className={styles.inner}>
           <Typography.Text>{t("header.slogan")}</Typography.Text>

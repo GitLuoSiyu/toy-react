@@ -1,6 +1,6 @@
 export const CHANGE_LANGUAGE = "change_language";
 export const ADD_LANGUAGE = "add_language";
- 
+
 interface ChangeLanguageAction {
   type: typeof CHANGE_LANGUAGE;
   payload: "zh" | "en";
